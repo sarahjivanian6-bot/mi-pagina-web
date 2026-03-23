@@ -1,0 +1,286 @@
+<!DOCTYPE html> <!--Le indica al navegador que esta es una página HTML5-->
+<html lang="en">  <!--Esta línea de código envuelve todo el código (HTML) y (lang="en") indica que mi página está en español-->
+
+<!--Es la configuración inicial de la página, nada de aquí aparecerá en la pantalla (exepto el título que aparecerá en la pestaña del navegador)-->
+<head>  
+    <meta charset="UTF-8"> <!--para reconocer tildes y Ñ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--para ajustar atomáticamente la página a la pantalla-->
+    <title>Galería de Arte</title> <!--título que aparecerá en la pestaña-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css"> <!--Como voy a trabajar el CSS en otra página, esto conecta las dos páginas (html y css)-->
+</head>
+
+<!--Todo lo de aquí aparecerá en pantalla-->
+<body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!--Inicio de la página web-->
+        <!--nav con elementos de bootstrap-->
+        <nav class="navbar navbar-expand-lg sticky-top mi-nav-personalizado mb-5">
+            <div class="container-fluid">
+
+                <span class="navbar-brand mb-0 h1">Barra de Navegación</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#section" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galería</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#inicio-galeria">Pintura</a></li>
+                                <li><a class="dropdown-item" href="#inicio-galeria">Escultura</a></li>
+                                <li><a class="dropdown-item" href="#inicio-galeria">Dibujo</a></li>
+                                <li><a class="dropdown-item" href="#inicio-galeria">Otras manualidades</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#informacion-personal">Información personal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <section id="section">
+        <h1 id="inicio">Galería de Arte: un recorrido por mis creaciones</h1>
+
+        <article>
+            <h2 class="t2">Descripción del sitio</h2>
+
+            <p><!--Descripción de la página-->
+                ¡Bienvenido a mi galería de arte! Aquí encontrarás todas mis creaciones artísticas a lo largo de los años.<br>
+                Durante toda mi vida he creado muchas cosas con mis manos, pues el arte hace parte fundamental de quién soy yo como persona.<br>
+                Esta página es una reunión visual de todas esas cosas que he creado utilizando diferentes materiales, técnicas y, sobre todo, 
+                mucha imaginación.<br>
+                
+                Te invito a contemplar las imagenes y descripciones de mis obras, que están organizadas por diciplina.<br>
+                
+                <br>¡Disfruta de mi jardín artístico!</p>
+
+        </article>
+    </section>
+
+
+<!--Galería de arte (cuerpo de la página)-->
+<section>
+    <h1 id="inicio-galeria">Creaciones artísticas</h1>
+    
+    <div class="accordion accordion-flush mi-acordeon" id="accordionFlushExample">
+        
+        <div class="accordion-item item-pintura">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Pintura</button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            
+                            <!-- Primera Imagen p + Tabla -->
+                             <div class="col-md-4 mb-4"> 
+                                <img src="https://i.ibb.co/MkFGWwZ6/pintura-mariposa.jpg" alt="pintura mariposa" class="img-fija-acordeon rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>acrílicos, cartón y texturizador</td></tr>
+                                        <tr><td>Fecha</td><td>26/09/2023</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Segunda Imagen p + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/wFJkp3p3/pintura-girasol.jpg" alt="pintura girasol" class="img-fija-acordeon rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>acrílicos, cartón y texturizador</td></tr>
+                                        <tr><td>Fecha</td><td>12/10/2023</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Tercera Imagen p + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/TBmDZD8Q/pintura-orquidea.jpg" alt="pintura orquidea" class="img-fija-acordeon rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>acrílicos, cartón y texturizador</td></tr>
+                                        <tr><td>Fecha</td><td>15/11/2023</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item item-escultura">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Escultura</button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            
+                            <!-- Primera Imagen e + Tabla -->
+                             <div class="col-md-4 mb-4"> 
+                                <img src="https://i.ibb.co/609B1zLD/escultura-polilla.jpg" alt="escultura polilla" class="img-fija-acordeon2 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>Arcilla</td></tr>
+                                        <tr><td>Fecha</td><td>03/10/2025</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Segunda Imagen e + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/YTjKMjQc/escultura-flor.jpg" alt="escultura flor" class="img-fija-acordeon2 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>Yeso</td></tr>
+                                        <tr><td>Fecha</td><td>21/09/2025</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Tercera Imagen e + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/SZCRHr1/escultura-hongo.jpg" alt="escultura hongo" class="img-fija-acordeon2 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>Porcelanicrón</td></tr>
+                                        <tr><td>Fecha</td><td>05/03/2025</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item item-dibujo">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Dibujo</button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            
+                            <!-- Primera Imagen d + Tabla -->
+                             <div class="col-md-4 mb-4"> 
+                                <img src="https://i.ibb.co/KS51HPp/dibujo-bosque.jpg" alt="dibujo bosque" class="img-fija-acordeon3 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>colores</td></tr>
+                                        <tr><td>Fecha</td><td>18/10/2022</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Segunda Imagen d + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/pr4ybr0g/dibujo-pandarojo.jpg" alt="dibujo pandarojo" class="img-fija-acordeon3 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>colores</td></tr>
+                                        <tr><td>Fecha</td><td>31/05/2022</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Tercera Imagen d + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/cccT980d/dibujo-martasibelina.jpg" alt="dibujo martasibelina" class="img-fija-acordeon3 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>colores</td></tr>
+                                        <tr><td>Fecha</td><td>28/05/2022</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item item-otros">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">Otras manualidades</button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="container-fluid">
+                        <div class="row text-center">
+                            
+                            <!-- Primera Imagen o + Tabla -->
+                             <div class="col-md-4 mb-4"> 
+                                <img src="https://i.ibb.co/SXWL28kc/otros-casita.jpg" alt="otros casita" class="img-fija-acordeon4 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>piezas de madera</td></tr>
+                                        <tr><td>Fecha</td><td>2023</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Segunda Imagen o + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/933pKyB9/otros-separador.jpg" alt="otros separador" class="img-fija-acordeon4 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>cartón paja,acetato y acrílicos</td></tr>
+                                        <tr><td>Fecha</td><td>2/10/2024</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Tercera Imagen o + Tabla -->
+                             <div class="col-md-4 mb-4">
+                                <img src="https://i.ibb.co/ZRFz4wWq/otros-peluche.jpg" alt="otros peluche" class="img-fija-acordeon4 rounded shadow-sm mb-3">
+                                <table class="table table-borderless tabla-personalizada mx-auto">
+                                    <tbody>
+                                        <tr><td>Materiales</td><td>fieltro</td></tr>
+                                        <tr><td>Fecha</td><td>2023</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<aside class="t2"> <!--Imágen-->
+    <h1 id="yo">Conoce más sobre mi</h1>
+    <div class="img5">
+    <img src="https://i.ibb.co/G4d2bZCB/Avatar.png" alt="Yo (como avatar)" width="500">
+    </div>
+
+<aside>
+
+<!--información personal-->
+<footer id="informacion-personal"> <!--Final de la página-->
+    <h2 class="t2">Información personal</h2>
+    <p class="texto">Mi nombre: Sarah Paola Paillier Lora
+        Contacto: 3024360938
+        Correo electrónico: sarahjivanian6@gmail.como
+        Institución: Skolmi
+
+        Fecha de creación de la página web: 4/02/2026
+    </p>
+
+</body>
+</html>
+
+
